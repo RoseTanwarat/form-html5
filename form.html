@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+</head>
+<body>
+    <h1 align="center">ลงทะเบียน</h1>
+    <form align="center">
+        <!--input value-->
+        <div>
+            <label for="firstname">ชื่อ</label>
+            <input type="text" name="fname" placeholder="ป้อนชื่อของคุณ">
+        </div>
+        <div>
+            <label for="lastname">นามสกุล</label>
+            <input type="text" name="lname">
+        </div>
+        <div>
+            <label for="email">อีเมล</label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <label for="">ที่อยู่</label>
+            <textarea name="" cols="30" rows="5">
+                <!---ใส่ข้มูลได้-->
+            </textarea> 
+        </div>
+        <div>
+            <label for="number">อายุ</label>
+            <input type="number" name="age" min="1" max="100" value="20">
+        </div> 
+        <div>
+            <label for="">วันเกิด</label>
+            <input type="date" name="birthdate">
+        </div>
+        <div>
+            <label for="">เบอร์</label>
+            <input type="tel" name="tel">
+        </div>   
+        <div>
+            <label for="">สีที่ชอบ</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label for="">ช่วงตัวเลข</label>
+            <input type="range" name="rangenumber" value="20">
+        </div>
+        <!--ตัวเลือก-->
+        <div>
+            <label for="">การศึกษา</label>
+            <select name="edu">
+                 <option value="ตรี">ตรี</option>
+                 <option value="โท">โท</option>
+                 <option value="เอก">เอก</option>
+            </select>  
+        </div>
+        <div>
+            <label for="">เพศ</label>
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">กำหนดเอง
+        </div>
+        <div>
+            <input type="submit" value="บันทึก">
+            <input type="reset" value="ล้าง">
+        </div>
+    </form>
+</body>
+</html>
